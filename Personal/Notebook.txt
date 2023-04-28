@@ -1,1 +1,23 @@
 POO (Programacion Orientada a Objetos)
+
+Definimos una clase en JS de la siguente manera:
+
+function Person(){}
+
+Esto era como se ponia una clase hasta el 2015 cuando introdujeron la palabra "class"
+
+class Persona {
+  constructor(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+
+Comportamiento en JS:
+
+Person.protoyepe.walk = function (){}
+
+
+CLASE DEVF 25 DE ABRIL 2023
+
+- Explicacion del POO
+- Explicacion de ecmaScript6
