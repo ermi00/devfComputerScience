@@ -18,8 +18,13 @@ class TarjetaDeCredito{
             console.log(`Esta tarjeta NO cuenta como valida`);
         }
     }
+
+    procesarPago(monto, producto){
+        console.log(`El total a pagar es $${monto} MXN. El producto es un ${producto}`);
+    }
 }
 
 let tarjetaUsuario1 = new TarjetaDeCredito("1234567890123456", "07/26", 122);
 
 tarjetaUsuario1.validarNumeroDeTarjeta();
+tarjetaUsuario1.procesarPago(200,"Teclado")
