@@ -21,3 +21,8 @@ CLASE DEVF 25 DE ABRIL 2023
 
 - Explicacion del POO
 - Explicacion de ecmaScript6
+
+CLASE DEVF 27 DE ABRIL 2023
+
+Tarea: Investigar prototype y Object en JS
+

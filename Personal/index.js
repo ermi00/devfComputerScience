@@ -1,63 +1,63 @@
-// // // FUNCION FARENHEITTOCELSIUS
+// // // // FUNCION FARENHEITTOCELSIUS
 
-// // function farenheitToCelsius(a){
-// //     return (a - 32) * 5/9;
-// // }
+// // // function farenheitToCelsius(a){
+// // //     return (a - 32) * 5/9;
+// // // }
 
-// // console.log(farenheitToCelsius(19));
+// // // console.log(farenheitToCelsius(19));
 
-// // // FUNCION FLECHA FARENHEITTOCELSIUS
+// // // // FUNCION FLECHA FARENHEITTOCELSIUS
 
-// // farenheitToCelsius = (a) => {
-// //     return (a - 32) * 5/9;
-// // }
+// // // farenheitToCelsius = (a) => {
+// // //     return (a - 32) * 5/9;
+// // // }
 
-// // // // FUNCION PALINDROME
+// // // // // FUNCION PALINDROME
 
-// // // function palindrome(x){
-// // //     if (x == x && x){
-// // //         return true;
-// // //     } else {
-// // //         return false;
+// // // // function palindrome(x){
+// // // //     if (x == x && x){
+// // // //         return true;
+// // // //     } else {
+// // // //         return false;
+// // // //     }
+// // // // }
+
+// // // // No lo termine xd
+
+
+// // // // CREANDO UN OBJETO
+
+// // // let Usuario = {
+// // //     nombre: "Juan",
+// // //     apellido: "Perez",
+// // //     pasatiempos: ["Futbol", "Correr", "Cantar", "Videojuegos"],
+// // // }
+
+// // // console.log(`El nombre es ${Juan.nombre}`);
+
+// // // // CREANDO UN OBJETO PARTE 2
+
+// // // let usuario1 = {
+// // //     nombre: "Pablo",
+// // //     apellido: "Morza",
+// // //     edad: 15,
+// // //     saludar: function(){
+// // //         console.log(`Hola! ${this.nombre} ${this.apellido}`);
 // // //     }
 // // // }
 
-// // // No lo termine xd
 
+// // // let usuario2 = {
+// // //     nombre: "Saul",
+// // //     apellido: "Hernandez",
+// // //     edad: 16
+// // // }
 
-// // // CREANDO UN OBJETO
-
-// // let Usuario = {
-// //     nombre: "Juan",
-// //     apellido: "Perez",
-// //     pasatiempos: ["Futbol", "Correr", "Cantar", "Videojuegos"],
-// // }
-
-// // console.log(`El nombre es ${Juan.nombre}`);
-
-// // // CREANDO UN OBJETO PARTE 2
-
-// // let usuario1 = {
-// //     nombre: "Pablo",
-// //     apellido: "Morza",
-// //     edad: 15,
-// //     saludar: function(){
-// //         console.log(`Hola! ${this.nombre} ${this.apellido}`);
-// //     }
-// // }
-
-
-// // let usuario2 = {
-// //     nombre: "Saul",
-// //     apellido: "Hernandez",
-// //     edad: 16
-// // }
-
-// // let usuario3 = {
-// //     nombre: "Donovan",
-// //     apellido: "Carrasca",
-// //     edad: 17
-// // }
+// // // let usuario3 = {
+// // //     nombre: "Donovan",
+// // //     apellido: "Carrasca",
+// // //     edad: 17
+// // // }
 
 
 
@@ -75,36 +75,54 @@
 // }
 
 
-// let perro = new Animal("Firulais", 11, "guau", true);
+// // let perro = new Animal("Firulais", 11, "guau", true);
 
-// EJERCICIO DEL PROFESOR
+// // EJERCICIO DEL PROFESOR
 
-class Calculadora{
-    constructor(valor1, valor2){
-        this.valor1 = valor1
-        this.valor2 = valor2
-    }
+// class Calculadora{
+//     constructor(valor1, valor2){
+//         this.valor1 = valor1
+//         this.valor2 = valor2
+//     }
 
-    suma(){
-        return `El resultado es de la suma es ${this.valor1 + this.valor2}`
-    }
+//     suma(){
+//         return `El resultado es de la suma es ${this.valor1 + this.valor2}`
+//     }
 
-    resta(){
-        return `El resultado es de la resta es ${this.valor1 - this.valor2}`
-    }
+//     resta(){
+//         return `El resultado es de la resta es ${this.valor1 - this.valor2}`
+//     }
 
-    multiplicacion(){
-        return `El resultado es de la multiplicacion es ${this.valor1 * this.valor2}`
-    }
+//     multiplicacion(){
+//         return `El resultado es de la multiplicacion es ${this.valor1 * this.valor2}`
+//     }
 
-    division(){
-        return `El resultado es de la division es ${this.valor1 / this.valor2}`
+//     division(){
+//         return `El resultado es de la division es ${this.valor1 / this.valor2}`
+//     }
+// }
+
+
+// let resultados = new Calculadora(17,8);
+// resultados.suma();
+// resultados.resta();
+// resultados.multiplicacion();
+// resultados.division();
+
+
+// CLASE 2 DE MAYO 2023
+
+class Bebida{
+    constructor(cantidad){
+        this.cantidad = cantidad;
     }
 }
 
 
-let resultados = new Calculadora(17,8);
-resultados.suma();
-resultados.resta();
-resultados.multiplicacion();
-resultados.division();
+class Refresco extends Bebida{
+    constructor(cantidad){
+        super(cantidad)
+    }
+}
+
+let pepsi = new Refresco();
